@@ -1,27 +1,47 @@
 # Changelog
 
+## [0.1.3] - 2026-05-30 - BEST UI VERSION 🎨
+
+### 🎨 Premium UI Enhancements
+- **Stunning Visual Design**: Complete redesign with premium aesthetics
+- **Gradient Buttons**: Beautiful gradient AI Review button with glow effects
+- **Smooth Animations**: All interactions have smooth 0.2s transitions
+- **Box Shadows**: Depth and elevation throughout the interface
+- **Rounded Corners**: Consistent 8px border radius for modern look
+- **Better Colors**: Improved contrast and visual hierarchy
+- **Hover Effects**: Interactive feedback on all clickable elements
+
+### ✨ New Features
+- **Loading Screen**: Beautiful loading state with animations
+- **Expand/Collapse All**: Quick controls for all files
+- **Empty States**: Helpful messages with large icons
+- **Better Comment Cards**: Professional cards with colored borders
+- **Tab Icons**: Visual icons for each tab (📄 📊 💬 📝)
+- **Live Stats**: Real-time comment counter in header
+
+### 🎯 UX Improvements
+- **Better Spacing**: Improved padding and margins throughout
+- **Clearer Hierarchy**: Better visual organization
+- **Brighter Highlights**: Easier to see diff changes
+- **Professional Polish**: Enterprise-grade design quality
+- **Responsive Layout**: Works perfectly at all sizes
+
+### 🐛 Bug Fixes
+- Fixed comment button positioning
+- Fixed hover state transitions
+- Fixed empty state messaging
+- Improved loading performance
+
 ## [0.1.2] - 2026-05-30
 
 ### Added
-- **Activity Tab**: New Bitbucket-style activity feed showing all comments
-- **Back/Forward Navigation**: Navigate between tabs with history
-- **Delete Comments**: Ability to delete entire comment threads
-- **Export Comments Only**: New option to export just comments without full report
-- **Professional UI**: Complete redesign matching Bitbucket's interface
-- **Comment Summary**: Live counter showing open/resolved comments in header
-- **Better Status Badges**: Visual indicators for comment status and severity
-- **Keyboard Shortcuts**: Ctrl+Shift+R (Cmd+Shift+R on Mac) to open review
-
-### Changed
-- Completely redesigned UI with Bitbucket-style layout
-- Improved diff viewer with better styling
-- Enhanced comment cards with action buttons
-- Better visual hierarchy and spacing
-
-### Fixed
-- Navigation state management
-- Comment deletion now works properly
-- Export functionality separated into two options
+- Activity Tab with Bitbucket-style feed
+- Back/Forward navigation
+- Delete comments functionality
+- Export comments only option
+- Professional UI redesign
+- Live comment counter
+- Keyboard shortcuts (Ctrl+Shift+R)
 
 ## [0.1.1] - 2026-05-30
 

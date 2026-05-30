@@ -2,7 +2,7 @@
   "name": "selfreview",
   "displayName": "SelfReview - Code Review Tool",
   "description": "Professional code review tool with Bitbucket-style diff viewer, inline commenting, and intelligent automated review capabilities",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "publisher": "sandeshbagmare",
   "engines": {
     "vscode": "^1.90.0"
