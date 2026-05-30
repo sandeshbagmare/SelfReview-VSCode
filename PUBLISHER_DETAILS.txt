@@ -1,0 +1,47 @@
+# Publisher Details for Marketplace
+
+## Basic Information
+**Name:** sandeshbagmare
+**ID:** sandeshbagmare
+
+## About You
+
+**Description:**
+```
+Software Engineer specializing in AI, DevOps, and VS Code extensions. Building tools that enhance developer productivity and code quality. Currently working as Associate Software Analyst at PTC, focusing on Agentic AI frameworks and developer tooling.
+```
+
+**Company website:**
+```
+https://www.linkedin.com/in/sandeshbagmare
+```
+
+**Support:**
+```
+sandeshbagmare2110@gmail.com
+```
+
+**LinkedIn:**
+```
+https://www.linkedin.com/in/sandeshbagmare
+```
+
+**Source code repository:**
+```
+https://github.com/sandeshbagmare
+```
+
+**Twitter:**
+```
+(Leave blank if you don't have one)
+```
+
+---
+
+## Copy-Paste Ready Description:
+
+Software Engineer specializing in AI, DevOps, and VS Code extensions. Building tools that enhance developer productivity and code quality. Currently working as Associate Software Analyst at PTC, focusing on Agentic AI frameworks and developer tooling.
+
+---
+
+**Note:** You can leave the "Verified domain" and "Logo" fields empty for now - they're optional. You can add them later after your extension is published.

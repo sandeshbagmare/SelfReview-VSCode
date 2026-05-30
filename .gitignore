@@ -1,0 +1,10 @@
+﻿node_modules
+out
+media/*.js
+*.vsix
+.vscode-test
+.selfreview
+*.log
+dist
+build
+.DS_Store

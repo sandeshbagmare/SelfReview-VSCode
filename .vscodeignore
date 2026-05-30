@@ -1,0 +1,8 @@
+node_modules
+*.vsix
+.vscode-test
+.selfreview
+src
+esbuild.js
+tsconfig.json
+.vscode

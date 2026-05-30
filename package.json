@@ -1,0 +1,110 @@
+{
+  "name": "selfreview",
+  "displayName": "SelfReview - Code Review Tool",
+  "description": "Professional code review tool with Bitbucket-style diff viewer, inline commenting, and intelligent automated review capabilities",
+  "version": "0.2.0",
+  "publisher": "sandeshbagmare",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "SCM Providers",
+    "Other"
+  ],
+  "keywords": [
+    "code review",
+    "git",
+    "diff viewer",
+    "comments",
+    "collaboration",
+    "pull request",
+    "code quality",
+    "review tool"
+  ],
+  "activationEvents": [
+    "onWebviewPanel:selfReview"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "selfreview.open",
+        "title": "SelfReview: Open Review",
+        "icon": "$(comment-discussion)"
+      },
+      {
+        "command": "selfreview.setOpenAIKey",
+        "title": "SelfReview: Set OpenAI API Key"
+      },
+      {
+        "command": "selfreview.setAnthropicKey",
+        "title": "SelfReview: Set Anthropic API Key"
+      }
+    ],
+    "menus": {
+      "scm/title": [
+        {
+          "command": "selfreview.open",
+          "group": "navigation",
+          "when": "scmProvider == git"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "selfreview.open",
+          "when": "workspaceFolderCount > 0"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "SelfReview",
+      "properties": {
+        "selfreview.defaultModels": {
+          "type": "array",
+          "default": [
+            "gpt-4o",
+            "claude-3-5-sonnet-20241022",
+            "ollama:llama3"
+          ],
+          "description": "Available AI models for code review"
+        },
+        "selfreview.rulesFile": {
+          "type": "string",
+          "default": ".selfreview/review-rules.md",
+          "description": "Path to custom review rules file"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "node esbuild.js --production",
+    "watch": "node esbuild.js --watch",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "@types/react": "^19.2.15",
+    "@types/react-dom": "^19.2.3",
+    "@types/uuid": "^10.0.0",
+    "@types/vscode": "^1.90.0",
+    "@vscode/vsce": "^3.9.1",
+    "esbuild": "^0.28.0",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.100.1",
+    "openai": "^6.39.1",
+    "simple-git": "^3.36.0",
+    "uuid": "^14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sandeshbagmare/selfreview"
+  },
+  "license": "MIT",
+  "icon": "extension-icon.png"
+}

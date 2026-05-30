@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Publisher Logo Generator</title>
+</head>
+<body>
+    <canvas id="logoCanvas" width="128" height="128"></canvas>
+    <br>
+    <button onclick="downloadLogo()">Download Logo</button>
+
+    <script>
+        const canvas = document.getElementById('logoCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Background gradient
+        const gradient = ctx.createLinearGradient(0, 0, 128, 128);
+        gradient.addColorStop(0, '#007ACC');
+        gradient.addColorStop(1, '#005A9E');
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, 128, 128);
+
+        // Draw initials "SB"
+        ctx.fillStyle = '#FFFFFF';
+        ctx.font = 'bold 60px Arial';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('SB', 64, 64);
+
+        function downloadLogo() {
+            const link = document.createElement('a');
+            link.download = 'publisher-logo.png';
+            link.href = canvas.toDataURL();
+            link.click();
+        }
+    </script>
+</body>
+</html>
