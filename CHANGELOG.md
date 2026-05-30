@@ -1,72 +1,44 @@
 # Changelog
 
-## [0.3.0] - 2026-05-30 - SUPER IMPROVED VERSION 🚀
-
-### 🎯 Major New Features
-- **Keyboard Shortcuts**: Navigate and interact with keyboard
-- **Search & Filter**: Find comments quickly with search
-- **Enhanced AI Review**: Better progress tracking and error handling
-- **Performance Boost**: 50% faster diff rendering
-- **Dark/Light Theme Support**: Automatic theme detection
-- **Collapsible Sections**: Collapse/expand all files at once
-- **Comment Drafts**: Auto-save drafts as you type
-- **Undo/Redo**: Undo comment deletions
-- **Bulk Actions**: Resolve/delete multiple comments at once
-- **Quick Actions Menu**: Right-click context menu
-
-### 🎨 UI/UX Improvements
-- **Smooth Animations**: Transitions for all interactions
-- **Loading States**: Better feedback during operations
-- **Empty States**: Helpful messages when no data
-- **Tooltips**: Helpful hints on hover
-- **Keyboard Navigation**: Tab through comments
-- **Focus Management**: Better accessibility
-- **Responsive Layout**: Works on all screen sizes
-
-### ⚡ Performance Improvements
-- **Virtual Scrolling**: Handle 1000+ files smoothly
-- **Lazy Loading**: Load diffs on demand
-- **Debounced Search**: Instant search without lag
-- **Optimized Rendering**: React.memo for components
-- **Cached Data**: Faster subsequent loads
-
-### 🔧 Technical Improvements
-- **Better Error Messages**: Clear, actionable errors
-- **Retry Logic**: Auto-retry failed operations
-- **Offline Support**: Works without internet
-- **State Persistence**: Remember your preferences
-- **Undo Stack**: Undo any action
-- **Validation**: Prevent invalid operations
-
-### 🐛 Bug Fixes
-- Fixed comment positioning on long lines
-- Fixed scroll position after navigation
-- Fixed theme switching issues
-- Fixed export formatting
-- Fixed AI review timeout handling
-
-## [0.2.0] - 2026-05-30
+## [0.1.2] - 2026-05-30
 
 ### Added
-- Activity Tab with Bitbucket-style feed
-- Back/Forward navigation
-- Delete comments functionality
-- Export comments only option
-- Professional UI redesign
-- Live comment counter
+- **Activity Tab**: New Bitbucket-style activity feed showing all comments
+- **Back/Forward Navigation**: Navigate between tabs with history
+- **Delete Comments**: Ability to delete entire comment threads
+- **Export Comments Only**: New option to export just comments without full report
+- **Professional UI**: Complete redesign matching Bitbucket's interface
+- **Comment Summary**: Live counter showing open/resolved comments in header
+- **Better Status Badges**: Visual indicators for comment status and severity
+- **Keyboard Shortcuts**: Ctrl+Shift+R (Cmd+Shift+R on Mac) to open review
+
+### Changed
+- Completely redesigned UI with Bitbucket-style layout
+- Improved diff viewer with better styling
+- Enhanced comment cards with action buttons
+- Better visual hierarchy and spacing
+
+### Fixed
+- Navigation state management
+- Comment deletion now works properly
+- Export functionality separated into two options
 
 ## [0.1.1] - 2026-05-30
 
 ### Changed
-- Updated display name
-- Enhanced documentation
+- Updated display name to "SelfReview - Code Review Tool"
+- Enhanced README with comprehensive documentation
+- Improved extension description and keywords
 
 ## [0.1.0] - 2026-05-30
 
 ### Added
 - Initial release
-- Diff viewer with inline comments
-- Overview and Commits tabs
-- AI code review
-- Custom review rules
-- Export functionality
+- Bitbucket-style diff viewer with inline comments
+- Overview tab for aggregated comments
+- Commits tab for browsing commit history
+- Automated code review with GPT-4, Claude, and Ollama support
+- Custom review rules support
+- Persistent comment storage
+- Export to Markdown functionality
+- Secure API key storage
