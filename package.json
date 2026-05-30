@@ -2,7 +2,7 @@
   "name": "selfreview",
   "displayName": "SelfReview - Code Review Tool",
   "description": "Professional code review tool with Bitbucket-style diff viewer, inline commenting, and intelligent automated review capabilities",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "publisher": "sandeshbagmare",
   "engines": {
     "vscode": "^1.90.0"
@@ -56,6 +56,14 @@
         }
       ]
     },
+    "keybindings": [
+      {
+        "command": "selfreview.open",
+        "key": "ctrl+shift+r",
+        "mac": "cmd+shift+r",
+        "when": "workspaceFolderCount > 0"
+      }
+    ],
     "configuration": {
       "title": "SelfReview",
       "properties": {
