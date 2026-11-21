@@ -2,7 +2,7 @@
 
 A comprehensive VS Code extension that brings Bitbucket-style code review experience directly into your editor. Review your code changes with inline comments, track discussions, and get intelligent automated feedback - all without leaving VS Code.
 
-![Version](https://img.shields.io/badge/version-0.2.0-blue)
+![Version](https://img.shields.io/badge/version-0.1.3-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 ## 🌟 Features
@@ -59,7 +59,7 @@ A comprehensive VS Code extension that brings Bitbucket-style code review experi
 ### Installation
 
 1. Install from VS Code Marketplace (search "SelfReview")
-2. Or install from VSIX file: `code --install-extension selfreview-0.2.0.vsix`
+2. Or install from VSIX file: `code --install-extension selfreview-0.1.3.vsix`
 
 ### Quick Start
 
